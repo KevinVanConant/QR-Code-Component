@@ -1,0 +1,132 @@
+/*CSS reset*/
+/*** box sizing border-box for all elements ***/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+button {
+  background-color: transparent;
+  color: inherit;
+  border-width: 0;
+  padding: 0;
+  cursor: pointer;
+}
+figure {
+  margin: 0;
+}
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+ul,
+ol,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+p {
+  margin: 0;
+}
+cite {
+  font-style: normal;
+}
+fieldset {
+  border-width: 0;
+  padding: 0;
+  margin: 0;
+}
+
+/* Color variables */
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --gray-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+}
+
+p {
+  font-size: 15px;
+}
+
+body {
+  background-color: var(--light-gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  /* padding: 30px; */
+  margin: 35px;
+}
+
+h1 {
+  font-size: 2em;
+  font-family: "Outfit";
+  font-weight: 700;
+  padding-top: 35px;
+  color: var(--dark-blue);
+}
+
+p {
+  font-size: 1.5em;
+  padding-top: 35px;
+  padding-bottom: 50px;
+  color: var(--gray-blue);
+}
+
+.content-body {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  padding: 25px;
+  border-radius: 1.5rem;
+  margin-bottom: 50px;
+}
+
+img {
+  border-radius: 1rem;
+}
+
+/* Footer information */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 375px) {
+  body {
+  }
+
+  .content-body {
+    margin: 60px auto;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    width: 413px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 1440px) {
+}
